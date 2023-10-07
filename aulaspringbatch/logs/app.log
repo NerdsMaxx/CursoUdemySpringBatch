@@ -1,0 +1,34 @@
+2023-10-01 17:49:22,881 INFO c.u.a.AulasSpringBatchApplication [restartedMain] Starting AulasSpringBatchApplication using Java 1.8.0_382 on pop-os with PID 17589 (/home/guilherme/GitHub/Spring Java/Spring Batch/aulaspringbatch/target/classes started by guilherme in /home/guilherme/GitHub/Spring Java/Spring Batch/aulaspringbatch)
+2023-10-01 17:49:22,893 INFO c.u.a.AulasSpringBatchApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-10-01 17:49:23,746 INFO o.s.c.a.ConfigurationClassEnhancer [restartedMain] @Bean method PropsConfig.config is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+2023-10-01 17:49:24,266 INFO o.a.c.h.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2023-10-01 17:49:24,270 INFO o.a.c.c.StandardService [restartedMain] Starting service [Tomcat]
+2023-10-01 17:49:24,270 INFO o.a.c.c.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.79]
+2023-10-01 17:49:24,334 INFO o.a.c.c.C.[.[.[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-10-01 17:49:24,616 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-10-01 17:49:25,048 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-10-01 17:49:25,482 INFO o.s.b.c.r.s.JobRepositoryFactoryBean [restartedMain] No database type set, using meta data indicating: POSTGRES
+2023-10-01 17:49:25,507 INFO o.s.b.c.l.s.SimpleJobLauncher [restartedMain] No TaskExecutor has been set, defaulting to synchronous executor.
+2023-10-01 17:49:25,600 INFO o.a.c.h.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2023-10-01 17:49:25,630 INFO c.u.a.AulasSpringBatchApplication [restartedMain] Started AulasSpringBatchApplication in 3.425 seconds (JVM running for 4.398)
+2023-10-01 17:49:25,690 INFO o.s.b.c.l.s.SimpleJobLauncher [restartedMain] Job: [SimpleJob: [name=imprimeParImparJob]] launched with the following parameters: [{run.id=1, nome=Gui}]
+2023-10-01 17:49:25,725 INFO o.s.b.c.j.SimpleStepHandler [restartedMain] Executing step: [imprimeParImparStep]
+2023-10-01 17:49:25,774 INFO o.s.b.c.s.AbstractStep [restartedMain] Step: [imprimeParImparStep] executed in 49ms
+2023-10-01 17:49:25,782 INFO o.s.b.c.l.s.SimpleJobLauncher [restartedMain] Job: [SimpleJob: [name=imprimeParImparJob]] completed with the following parameters: [{run.id=1, nome=Gui}] and the following status: [COMPLETED] in 69ms
+2023-10-01 17:49:25,791 INFO o.s.b.c.l.s.SimpleJobLauncher [restartedMain] Job: [SimpleJob: [name=imprimeOlaJob]] launched with the following parameters: [{run.id=1, nome=Gui}]
+2023-10-01 17:49:25,797 INFO o.s.b.c.j.SimpleStepHandler [restartedMain] Executing step: [imprimeOlaStep]
+2023-10-01 17:49:25,803 INFO o.s.b.c.s.AbstractStep [restartedMain] Step: [imprimeOlaStep] executed in 6ms
+2023-10-01 17:49:25,809 INFO o.s.b.c.l.s.SimpleJobLauncher [restartedMain] Job: [SimpleJob: [name=imprimeOlaJob]] completed with the following parameters: [{run.id=1, nome=Gui}] and the following status: [COMPLETED] in 16ms
+2023-10-01 17:49:44,793 INFO o.a.c.c.C.[.[.[/] [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-01 17:49:44,793 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2023-10-01 17:49:44,795 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-2] Completed initialization in 2 ms
+2023-10-01 17:49:44,851 INFO o.s.b.c.l.s.SimpleJobLauncher [http-nio-8080-exec-2] Job: [SimpleJob: [name=imprimeOlaJob]] launched with the following parameters: [{time=1696193384838}]
+2023-10-01 17:49:44,865 INFO o.s.b.c.j.SimpleStepHandler [http-nio-8080-exec-2] Executing step: [imprimeOlaStep]
+2023-10-01 17:49:44,879 INFO o.s.b.c.s.AbstractStep [http-nio-8080-exec-2] Step: [imprimeOlaStep] executed in 14ms
+2023-10-01 17:49:44,890 INFO o.s.b.c.l.s.SimpleJobLauncher [http-nio-8080-exec-2] Job: [SimpleJob: [name=imprimeOlaJob]] completed with the following parameters: [{time=1696193384838}] and the following status: [COMPLETED] in 34ms
+2023-10-01 17:49:44,922 INFO o.s.b.c.l.s.SimpleJobLauncher [http-nio-8080-exec-2] Job: [SimpleJob: [name=imprimeParImparJob]] launched with the following parameters: [{time=1696193384838}]
+2023-10-01 17:49:44,933 INFO o.s.b.c.j.SimpleStepHandler [http-nio-8080-exec-2] Executing step: [imprimeParImparStep]
+2023-10-01 17:49:44,945 INFO o.s.b.c.s.AbstractStep [http-nio-8080-exec-2] Step: [imprimeParImparStep] executed in 11ms
+2023-10-01 17:49:44,955 INFO o.s.b.c.l.s.SimpleJobLauncher [http-nio-8080-exec-2] Job: [SimpleJob: [name=imprimeParImparJob]] completed with the following parameters: [{time=1696193384838}] and the following status: [COMPLETED] in 28ms
+2023-10-01 23:34:11,436 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-10-01 23:34:11,445 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
